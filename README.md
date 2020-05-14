@@ -5,7 +5,7 @@
 ---
 
 <!-- DOCKER -->
-# =====> docker
+# docker
 
 **URLs**
 - https://www.docker.com/get-started
@@ -321,7 +321,7 @@ Verificando se foi instalado e versão
 
 
 <!-- KAFKA -->
-# =====> kafka
+# kafka
 
 
 iniciar servidor do zookeeper
@@ -383,7 +383,7 @@ resetar um consumer para um tópico
 
 <!-- REDIS -->
 
-# =====> redis
+# redis
 
 
 
