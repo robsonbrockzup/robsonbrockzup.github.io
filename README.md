@@ -13,8 +13,9 @@
 </p>
 
 **URLs**
-- https://www.docker.com/get-started
-- https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt
+- [docker > get start](https://www.docker.com/get-started)
+- [instalar o docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- [instalar o docker - digital ocean](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
 
 <!-- **ESTUDO**
 - https://www.youtube.com/watch?v=sjppkJjIvT4&list=PLf-O3X2-mxDkiUH0r_BadgtELJ_qyrFJ_
@@ -22,11 +23,9 @@
     - 2h10m - Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers -->
 
 Treinamento online
-- kodekloud.com
+- [kodekloud.com](https://kodekloud.com/)
 
 
-Instalando o Docker
-https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 __
 
