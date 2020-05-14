@@ -6,11 +6,11 @@
 
 <!-- DOCKER -->
 
+# docker
+
 <p align="center">
   <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--HDTY4BaV--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/gbg8l5odbobqoabk7s5j.png" width="350" title="hover text">
 </p>
-
-# docker
 
 **URLs**
 - https://www.docker.com/get-started
@@ -327,11 +327,11 @@ Verificando se foi instalado e versão
 
 <!-- KAFKA -->
 
+# kafka
+
 <p align="center">
   <img src="https://miro.medium.com/max/1200/1*8GbrXbHdH5uPGMb5epWhrg.png" width="350" title="hover text">
 </p>
-
-# kafka
 
 
 iniciar servidor do zookeeper
@@ -390,21 +390,20 @@ resetar um consumer para um tópico
 
 <!-- REDIS -->
 
+## redis
+
 <p align="center">
   <img src="https://cdn-images-1.medium.com/fit/t/1600/480/1*RH-nQLRMejTFFL3zunTCAg.png" width="350" title="hover text">
 </p>
 
-# redis
-
 
 
 1. [docker para redis](#docker-para-redis)
-3. [resumo do tutorial try.redis](#resumo-do-tutorial-tryredis)
-2. [trabalhando com listas](#trabalhando-com-listas)
-2. [trabalhando com sets](#trabalhando-com-sets)
-2. [trabalhando com sorted set](#trabalhando-com-sorted-sets)
-2. [trabalhando com hashes](#trabalhando-com-hashes)
-3. [redis](#redis)
+2. [resumo do tutorial try.redis](#resumo-do-tutorial-tryredis)
+3. [trabalhando com listas](#trabalhando-com-listas)
+4. [trabalhando com sets](#trabalhando-com-sets)
+5. [trabalhando com sorted set](#trabalhando-com-sorted-sets)
+6. [trabalhando com hashes](#trabalhando-com-hashes)
 
 ***[redis.io](https://redis.io/)***
 
