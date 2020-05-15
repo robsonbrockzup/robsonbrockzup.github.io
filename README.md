@@ -326,6 +326,7 @@ Verificando se foi instalado e versão
 
 ---
 ###### [Voltar ao topo](#index)
+<div align="right">[Voltar ao topo](#index)</div>
 ---
 
 
