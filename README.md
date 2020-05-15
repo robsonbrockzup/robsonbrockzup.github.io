@@ -1,4 +1,5 @@
 ### index
+
 1. [docker](#docker)
 2. [kafka](#kafka)
 3. [redis](#redis)
@@ -326,7 +327,6 @@ Verificando se foi instalado e versão
 
 ---
 ###### [Voltar ao topo](#index)
-<div align="right">[Voltar ao topo](#index)</div>
 ---
 
 
