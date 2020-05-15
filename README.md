@@ -6,6 +6,7 @@
 ---
 
 
+
 <!-- DOCKER -->
 
 # docker
@@ -324,7 +325,7 @@ Verificando se foi instalado e versão
 
 
 ---
-###### [Voltar ao topo](#index)
+###### <p align="right">[Voltar ao topo](#index)</p>
 ---
 
 
@@ -391,8 +392,9 @@ resetar um consumer para um tópico
 
 
 ---
-###### [Voltar ao topo](#index)
+###### <p align="right">[Voltar ao topo](#index)</p>
 ---
+
 
 
 
@@ -682,5 +684,5 @@ Check the full list of Hash commands [http://redis.io/commands#hash] for more in
 
 
 ---
-###### [Voltar ao topo](#index)
+###### <p align="right">[Voltar ao topo](#index)</p>
 ---
