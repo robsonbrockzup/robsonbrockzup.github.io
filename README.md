@@ -683,6 +683,26 @@ Numerical values in hash fields are handled exactly the same as in simple string
 Check the full list of Hash commands [http://redis.io/commands#hash] for more information.
 
 
+#### Stream
+Font: [hackernoon.com](https://hackernoon.com/introduction-to-redis-streams-133f1c375cd3)
+
+##### writing
+XADD allows us to write a stream of events. Let’s create a stream of events reflecting the example above.
+We will name our stream ‘events’. The ‘*’ is used to separate optional parameters from the set of key values. This will write all these actions onto the ‘events’ steam.
+
+    > XADD stream_name * key1 value1 key2 value2 (...)
+    > XADD events * user tim action purchase item travel:fiji
+    > XADD events * user tim action preferences subscription daily
+    > XADD events * user sam action login platform iPhone
+
+##### reading
+We are requesting items in the stream ‘events’, starting at the beginning of the list (by passing ‘0’). We requested only 2 items.
+
+    > XREAD COUNT 2 STREAMS events item-id
+    > XREAD COUNT 2 STREAMS events 0
+
+
+
 ---
 ###### [Voltar ao topo](#index)
 ---
