@@ -325,7 +325,7 @@ Verificando se foi instalado e versão
 
 
 ---
-###### <p align="right">[Voltar ao topo](#index)</p>
+###### [Voltar ao topo](#index)
 ---
 
 
@@ -392,9 +392,8 @@ resetar um consumer para um tópico
 
 
 ---
-###### <p align="right">[Voltar ao topo](#index)</p>
+###### [Voltar ao topo](#index)
 ---
-
 
 
 
@@ -684,5 +683,5 @@ Check the full list of Hash commands [http://redis.io/commands#hash] for more in
 
 
 ---
-###### <p align="right">[Voltar ao topo](#index)</p>
+###### [Voltar ao topo](#index)
 ---
