@@ -328,6 +328,12 @@ Verificando se foi instalado e versão
 ---
 
 
+
+
+
+
+
+
 <!-- KAFKA -->
 
 # kafka
@@ -385,6 +391,10 @@ resetar um consumer para um tópico
 
 
 ---
+###### [Voltar ao topo](#index)
+---
+
+
 
 
 
