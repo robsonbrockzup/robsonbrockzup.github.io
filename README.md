@@ -20,14 +20,13 @@
 - [docker > get start](https://www.docker.com/get-started)
 - [instalar o docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - [instalar o docker - digital ocean](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
+- [Treinamento online | kodekloud.com](https://kodekloud.com/)
+- [Limpando contêineres, imagens e volumes | macoratti.net](http://www.macoratti.net/19/02/dock_limp1.htm)
 
 <!-- **ESTUDO**
 - https://www.youtube.com/watch?v=sjppkJjIvT4&list=PLf-O3X2-mxDkiUH0r_BadgtELJ_qyrFJ_
 - https://www.youtube.com/watch?v=fqMOX6JJhGo
     - 2h10m - Docker Tutorial for Beginners - A Full DevOps Course on How to Run Applications in Containers -->
-
-Treinamento online
-- [kodekloud.com](https://kodekloud.com/)
 
 
 
@@ -393,7 +392,7 @@ resetar um consumer para um tópico
 
 
 ---
-###### [Voltar ao topo](#index)
+###### [Voltar ao início do documento](#index) | [Voltar ao início **kafka**](#kafka)
 ---
 
 
@@ -684,7 +683,7 @@ Check the full list of Hash commands [http://redis.io/commands#hash] for more in
 
 
 #### Stream
-Font: [hackernoon.com](https://hackernoon.com/introduction-to-redis-streams-133f1c375cd3)
+-> Font: [hackernoon.com](https://hackernoon.com/introduction-to-redis-streams-133f1c375cd3)
 
 ##### writing
 XADD allows us to write a stream of events. Let’s create a stream of events reflecting the example above.
@@ -702,7 +701,17 @@ We are requesting items in the stream ‘events’, starting at the beginning of
     > XREAD COUNT 2 STREAMS events 0
 
 
+#### Get all keys
+-> Font: [How to Get All Keys in Redis](https://chartio.com/resources/tutorials/how-to-get-all-keys-in-redis/)
+
+##### Retrieving All Existing Keys
+As it turns out, every SET command we issued above created a new, unique key within our Redis database. To get a list of all current keys that exist, simply use the KEYS command:
+
+    > KEYS *
+    > KEYS *mykey*
+        - all keys that contain the text "mykey"
+
 
 ---
-###### [Voltar ao topo](#index)
+###### [Voltar ao início do documento](#index) | [Voltar ao início **redis**](#redis)
 ---
