@@ -712,7 +712,6 @@ As it turns out, every SET command we issued above created a new, unique key wit
         - all keys that contain the text "mykey"
 
 
-## :floppy_disk: teste
 
 ---
 ###### [Voltar ao início do documento](#index) | [Voltar ao início **redis**](#redis)
