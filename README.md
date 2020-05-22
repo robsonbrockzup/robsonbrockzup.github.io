@@ -1,9 +1,11 @@
 ### index
 
-1. [docker](#docker)
-2. [kafka](#kafka)
-3. [redis](#redis)
 
+[![](img/docker_logo.png)](#docker)
+[![](img/kafka_logo.png)](#kafka)
+[![](img/redis_logo.png)](#redis)
+
+---
 ---
 
 
