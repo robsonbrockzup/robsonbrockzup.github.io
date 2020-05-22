@@ -22,8 +22,8 @@
 - [docker > get start](https://www.docker.com/get-started)
 - [instalar o docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - [instalar o docker - digital ocean](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-18-04-pt)
-- [Treinamento online | kodekloud.com](https://kodekloud.com/)
-- [Limpando contêineres, imagens e volumes | macoratti.net](http://www.macoratti.net/19/02/dock_limp1.htm)
+- [Treinamento online - kodekloud.com](https://kodekloud.com/)
+- [Limpando contêineres, imagens e volumes - macoratti.net](http://www.macoratti.net/19/02/dock_limp1.htm)
 
 <!-- **ESTUDO**
 - https://www.youtube.com/watch?v=sjppkJjIvT4&list=PLf-O3X2-mxDkiUH0r_BadgtELJ_qyrFJ_
