@@ -754,7 +754,7 @@ Guarda o estado atual da branch
     $ git stash save -u
 
 
-Resetar user | credential | senha | password
+Resetar user (credential senha password)
 
     $ git config credential.helper "" && git config --global credential.helper store
 
