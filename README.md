@@ -4,6 +4,7 @@
 [![](img/docker_logo.png)](#docker)
 [![](img/kafka_logo.png)](#kafka)
 [![](img/redis_logo.png)](#redis)
+[![](img/git_logo.png)](#git)
 
 ---
 ---
@@ -717,4 +718,102 @@ As it turns out, every SET command we issued above created a new, unique key wit
 
 ---
 ###### [Voltar ao início do documento](#index) | [Voltar ao início **redis**](#redis)
+---
+
+
+
+
+
+
+
+
+
+<!-- GIT -->
+
+## git
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png" width="350" title="hover text">
+</p>
+
+
+[Cheats](https://gist.github.com/chrismccoy/8775224)
+
+
+**_Ritual sagrado_**
+
+    $ git fetch -p origin
+    $ git pull
+    $ git add .
+    $ git commit -m "minha mensagem de commit"
+    $ git push origin
+
+
+Guarda o estado atual da branch
+
+    $ git stash save -u
+
+
+Resetar user|credential|senha|password
+
+    $ git config credential.helper "" && git config --global credential.helper store
+
+
+Checkout
+
+    $ git checkout -b <remote-branch>
+
+
+Apagar arquivos não trackeados (desadicionar)
+
+    $ git clean -f -d
+
+
+Log de todas as branches (exemplo)
+
+    $ git log --pretty=format:"%ad:%an:%d:%B" --date=short --reverse --all --since=2.months.ago --author=Petr
+
+
+Alterar url local
+
+    $ git config --get remote.origin.url
+    $ git remote set-url origin https://{new url with username replaced}
+
+
+Commitado sem push (ou seja, em Stage)
+    $ git log/diff origin/<minha_branch>..HEAD
+
+
+
+Configurações iniciais
+
+    $ git config --global user.name "Full Name"
+    $ git config --global user.email "email@address.com"
+    $ git config --global http.sslVerify false
+    $ git config --global credential.helper store
+
+
+Log
+
+    $ git log --all --graph --decorate --oneline
+
+
+Apagar arquivos não trackeados (desadicionar)
+
+    $ git clean -f -d
+
+
+Mostrar branch atual inline, inserir o conteúdo abaixo no arquivo .bashrc
+
+    # Show current git branch in command line
+    parse_git_branch() {
+        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+    }
+    export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+
+
+
+---
+###### [Voltar ao início do documento](#index) | [Voltar ao início **git**](#git)
 ---
