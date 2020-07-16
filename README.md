@@ -395,30 +395,48 @@ resetar um consumer para um tópico
 
 ### Exemplos em java
 
-#### Producer
+#### Producer (with key and callback)
 ```java
-public class ProducerDemo {
+public class ProducerDemoWithKeys {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        String boostraoServers = "localhost:9092";
+        final Logger logger = LoggerFactory.getLogger(ProducerDemoWithKeys.class);
+        String BOOTSTRAP_SERVER = "localhost:9092";
 
         // create producer properties
-
         Properties properties = new Properties();
-        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, boostraoServers);
+        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVER);
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
         // create the producer
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
 
-        for (int i = 0; i < 10 ; i++) {
+        for (int i = 0; i < 20; i++) {
+
+            String topic = "topico1";
+            String value = "minha mensagem " + i;
+            final String key = "id_" +i;
+
             // create a producer record
-            ProducerRecord<String, String> record = new ProducerRecord<String, String>("topico1", "minha "+ i +"a mensagem");
+            ProducerRecord<String, String> record = new ProducerRecord<String, String>(topic, key, value);
+
+            Thread.sleep(100);
 
             // send data - asynchronous
-            producer.send(record);
+            producer.send(record, new Callback() {
+                public void onCompletion(RecordMetadata recordMetadata, Exception e) {
+                    if (null == e) {
+                        logger.info("Received new metadata: " + "Topic: " + recordMetadata.topic() +
+                                "; Particition: " + recordMetadata.partition() + "; Offset: " + recordMetadata.offset() +
+                                "; Timestamp: " + recordMetadata.timestamp() + "; Key: " + key
+                        );
+                    } else {
+                        logger.error("Error while producing", e);
+                    }
+                }
+            }).get();
         }
 
         // just flush
@@ -427,7 +445,6 @@ public class ProducerDemo {
         // flush and close
         producer.close();
     }
-
 }
 ```
 
